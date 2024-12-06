@@ -84,6 +84,7 @@ If you want a better experience, refer to the following methods to use it.
 | listMaxHeight | Number       | 250               | list max height                                              |
 | noticeSwitch  | Boolean      | true              | notice is enabled by default, only the notice content is printed on the console when disabled |
 | storageName   | String       | 'aplayer-setting' | localStorage key that store player setting                   |
+| lyricOffset | Number | 16 | After adjusting the lyrics line height and font size, the default `transform` added by Aplayer decreases by 16px each time it is updated. You can define this value to ensure that the lyrics can be displayed normally.  |
 
 For example:
 

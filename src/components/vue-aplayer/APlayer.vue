@@ -137,7 +137,10 @@
             storageName: {
                 type: String,
                 default: "aplayer-setting",
-            }
+            },
+            lyricOffset: {
+                type: Number,
+                default: 16,
         },
         data () {
             return {
@@ -167,6 +170,7 @@
                     noticeOpacity: 0,
                     storageName: this.storageName,
                     storage: {},
+                    lyricOffset: this.lyricOffset,
                 },
                 audioStatus: {
                     duration: 0,

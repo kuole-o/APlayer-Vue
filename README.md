@@ -4,7 +4,8 @@
 
 <h1 align="center">Vue-APlayer</h1>
 
-> Vue 3.x for [APlayer](https://aplayer.js.org/).
+> Vue 3.x for [APlayer](https://aplayer.js.org/).  
+> 本版本用于 guole.fun 主页播放器，主要新增了`LyricOffset`配置项，默认值`16`，支持传入数字，定义歌词调整字体大小、行高后的偏移量，确保歌词正常展示。
 
 项目地址：[**Vue-APlayer**](https://github.com/first19326/APlayer)
 

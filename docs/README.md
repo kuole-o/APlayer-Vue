@@ -84,6 +84,7 @@ pnpm add @worstone/vue-aplayer
 | listMaxHeight | 数值      | 250               | 列表最大高度                                                 |
 | noticeSwitch  | 布尔      | true              | 通知默认开启，关闭后仅在控制台打印通知内容                   |
 | storageName   | 字符串    | 'aplayer-setting' | 存储播放器设置的 localStorage key                            |
+| lyricOffset | 数值 | 16 | 在调整歌词行高、字体大小后，Aplayer 默认添加的`transform`每次更新递减 16px，支持定义该值，确保歌词能正常展示  |
 
 例如：
 

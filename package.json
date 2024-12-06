@@ -1,7 +1,7 @@
 {
-  "name": "@worstone/vue-aplayer",
-  "version": "1.0.7",
-  "author": "WorstOne",
+  "name": "@guole.fun/vue-aplayer",
+  "version": "1.0.0",
+  "author": "WorstOne/guole",
   "description": "Vue 3.x for APlayer.",
   "keywords": [
     "Vue",
@@ -40,11 +40,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/first19326/APlayer.git"
+    "url": "git+https://github.com/kuole-o/APlayer-Vue.git"
   },
-  "homepage": "https://github.com/first19326/APlayer#readme",
+  "homepage": "https://github.com/kuole-o/APlayer-Vue#readme",
   "bugs": {
-    "url": "https://github.com/first19326/APlayer/issues"
+    "url": "https://github.com/kuole-o/APlayer-Vue/issues"
   },
   "directories": {
     "doc": "docs"

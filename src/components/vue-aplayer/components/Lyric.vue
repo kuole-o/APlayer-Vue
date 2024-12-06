@@ -11,8 +11,8 @@
         computed: {
             transformStyle () {
                 return {
-                    transform: `translateY(-${this.aplayer.lyricIndex * 16}px)`,
-                    webkitTransform: `translateY(-${this.aplayer.lyricIndex * 16}px)`,
+                    transform: `translateY(-${this.aplayer.lyricIndex * this.aplayer.lyricOffset}px)`,
+                    webkitTransform: `translateY(-${this.aplayer.lyricIndex * this.aplayer.lyricOffset}px)`,
                 }
             }
         }

@@ -21,14 +21,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org
 
-      - name: Install pnpm
-        run: npm install pnpm -g
-
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build
-        run: pnpm build
+        run: npm build
 
       # - name: Copy package.json
       #   run: cp package.json dist/

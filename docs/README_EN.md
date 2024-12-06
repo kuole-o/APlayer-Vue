@@ -251,6 +251,13 @@ The following LRC format are supported:
 `[mm:ss.xx]<mm:ss.xx>is`
 `[mm:ss.xx]amazing[mm:ss.xx]APlayer`
 
+### Lyrics offset
+
+Custom offset:
+```vue
+<APlayer :audio="audio" :lrcType=1 :lyricOffset=50 ref="aplayer" style="max-width: 600px" />
+```
+
 ## MSE support
 
 ### HLS

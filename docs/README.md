@@ -251,6 +251,12 @@ pnpm add @worstone/vue-aplayer
 `[mm:ss.xx]<mm:ss.xx>is`
 `[mm:ss.xx]amazing[mm:ss.xx]APlayer`
 
+### 歌词偏移量  
+
+自定义偏移量：
+```vue
+<APlayer :audio="audio" :lrcType=1 :lyricOffset=50 ref="aplayer" style="max-width: 600px" />
+```
 
 ## MSE 支持
 

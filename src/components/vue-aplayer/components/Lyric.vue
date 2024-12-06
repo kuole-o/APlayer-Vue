@@ -10,6 +10,7 @@
         props: ["aplayer"],
         computed: {
             transformStyle () {
+                //console.log('Lyric Offset:', this.aplayer.lyricOffset);
                 return {
                     transform: `translateY(-${this.aplayer.lyricIndex * this.aplayer.lyricOffset}px)`,
                     webkitTransform: `translateY(-${this.aplayer.lyricIndex * this.aplayer.lyricOffset}px)`,

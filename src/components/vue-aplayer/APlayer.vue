@@ -122,6 +122,10 @@
                 type: Boolean,
                 default: true,
             },
+            lyricOffset: {
+                type: Number,
+                default: 16,
+            },
             listFolded: {
                 type: Boolean,
                 default: false,
@@ -137,10 +141,7 @@
             storageName: {
                 type: String,
                 default: "aplayer-setting",
-            },
-            lyricOffset: {
-                type: Number,
-                default: 16,
+            }
         },
         data () {
             return {
@@ -163,6 +164,7 @@
                     lyricShow: this.lrcShow,
                     lyricIndex: 0,
                     lyrics: [],
+                    lyricOffset: this.lyricOffset,
                     listFolded: this.listFolded,
                     listMaxHeight: this.listMaxHeight,
                     noticeSwitch: this.noticeSwitch,
@@ -170,7 +172,6 @@
                     noticeOpacity: 0,
                     storageName: this.storageName,
                     storage: {},
-                    lyricOffset: this.lyricOffset,
                 },
                 audioStatus: {
                     duration: 0,
@@ -726,8 +727,8 @@
             this.audioRef.removeEventListener('waiting', this.waiting);
             this.audioRef.removeEventListener('playing', this.playing);
             window.removeEventListener("resize", this.resize);
-        }
-    };
+    },
+};
     export default aplayer;
 </script>
 <style lang="scss">

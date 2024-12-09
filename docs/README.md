@@ -253,11 +253,54 @@ pnpm add @worstone/vue-aplayer
 
 ### 歌词偏移量  
 
-自定义偏移量：
+#### 自定义偏移量
 ```vue
 <APlayer :audio="audio" :lrcType=1 :lyricOffset=50 ref="aplayer" style="max-width: 600px" />
 ```
-
+  
+#### 计算方式  
+```
+偏移量 = 行高 + 间距  
+```
+#### 示例
+若调整歌词（`.aplayer-lrc .aplayer-lrc-contents p`）字体样式为：  
+```css
+    font-size: 20px;
+    line-height: 1.5 !important;
+    height: auto !important;
+```
+调整容器`.aplayer-lrc .aplayer-lrc-contents`样式为：  
+```css
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+```
+则最终偏移量为：  
+```
+偏移量 = 行高 + 间距 = (20px * 1.5)px + 4px = 34px
+```
+最终初始化时，配置如下：  
+```vue
+    <APlayer 
+      v-if="playList[0]" 
+      ref="player" 
+      :audio="playList" 
+      :theme="theme"
+      :autoSwitch="false" 
+      :volume="volume" 
+      :showLrc="true"
+      :listFolded="listFolded" 
+      :listMaxHeight="listMaxHeight" 
+      :noticeSwitch="false" 
+      :lyricOffset=34 <!-- 设置偏移量 -->
+      @play="onPlay" 
+      @pause="onPause"
+      @canplay="onLoaded" 
+      @timeupdate="onTimeUp" 
+      @error="loadMusicError" 
+    />
+```
 ## MSE 支持
 
 ### HLS

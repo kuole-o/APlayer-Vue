@@ -16,7 +16,7 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: ['vue', 'smoothScroll'],
+      external: ['vue'],
       output: {
         globals: {
           vue: 'Vue',

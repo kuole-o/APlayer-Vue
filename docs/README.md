@@ -5,13 +5,13 @@
 使用 npm：
 
 ```bash
-npm i @worstone/vue-aplayer
+npm i vue3-aplayer-2
 ```
 
 使用 pnpm：
 
 ```bash
-pnpm add @worstone/vue-aplayer
+pnpm add vue3-aplayer-2
 ```
 
 ## 使用
@@ -22,7 +22,7 @@ pnpm add @worstone/vue-aplayer
 </template>
 <script setup>
     import { ref, onMounted } from "vue";
-    import APlayer from "@worstone/vue-aplayer";
+    import APlayer from "vue3-aplayer-2";
     const audio = ref([]);
 
     onMounted(() => {
@@ -42,7 +42,7 @@ pnpm add @worstone/vue-aplayer
 </template>
 <script setup>
     import { ref, onMounted } from "vue";
-    import APlayer from "@worstone/vue-aplayer";
+    import APlayer from "vue3-aplayer-2";
     
     const aplayer = ref(null);
     // 设置 2 个或 2 个以上的歌曲信息
@@ -204,7 +204,7 @@ pnpm add @worstone/vue-aplayer
 </template>
 <script setup>
     import { ref } from "vue";
-    import APlayer from "@worstone/vue-aplayer"
+    import APlayer from "vue3-aplayer-2"
     const audio = ref([
         {
             "title": "烟雨行舟（原唱：伦桑）",
@@ -227,7 +227,7 @@ pnpm add @worstone/vue-aplayer
 </template>
 <script setup>
     import { ref } from "vue";
-    import APlayer from "@worstone/vue-aplayer"
+    import APlayer from "vue3-aplayer-2"
     const audio = ref([
         {
             "title": "烟雨行舟（原唱：伦桑）",

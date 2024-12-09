@@ -5,13 +5,13 @@
 Using npm:
 
 ```bash
-npm i @worstone/vue-aplayer
+npm i vue3-aplayer-2
 ```
 
 Using pnpm:
 
 ```bash
-pnpm add @worstone/vue-aplayer
+pnpm add vue3-aplayer-2
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ pnpm add @worstone/vue-aplayer
 </template>
 <script setup>
     import { ref, onMounted } from "vue";
-    import APlayer from "@worstone/vue-aplayer";
+    import APlayer from "vue3-aplayer-2";
     const audio = ref([]);
 
     onMounted(() => {
@@ -42,7 +42,7 @@ If you want a better experience, refer to the following methods to use it.
 </template>
 <script setup>
     import { ref, onMounted } from "vue";
-    import APlayer from "@worstone/vue-aplayer";
+    import APlayer from "vue3-aplayer-2";
     
     const aplayer = ref(null);
     // set 2 or more audios data
@@ -204,7 +204,7 @@ The first way, put LRC to a LRC file, LRC file will be loaded when this audio st
 </template>
 <script setup>
     import { ref } from "vue";
-    import APlayer from "@worstone/vue-aplayer"
+    import APlayer from "vue3-aplayer-2"
     const audio = ref([
         {
             "title": "烟雨行舟（原唱：伦桑）",
@@ -227,7 +227,7 @@ The second way, put LRC to a JS string.
 </template>
 <script setup>
     import { ref } from "vue";
-    import APlayer from "@worstone/vue-aplayer"
+    import APlayer from "vue3-aplayer-2"
     const audio = ref([
         {
             "title": "烟雨行舟（原唱：伦桑）",

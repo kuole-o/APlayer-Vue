@@ -1,6 +1,6 @@
 {
-  "name": "@guole.fun/vue-aplayer",
-  "version": "1.0.0",
+  "name": "vue3-aplayer-2",
+  "version": "1.0.1",
   "author": "WorstOne/guole",
   "description": "Vue 3.x for APlayer.",
   "keywords": [
@@ -12,6 +12,7 @@
     "Vue-Component"
   ],
   "type": "module",
+  "types": "index.d.ts",
   "main": "./dist/vue-aplayer.cjs",
   "module": "./dist/vue-aplayer.js",
   "files": [
